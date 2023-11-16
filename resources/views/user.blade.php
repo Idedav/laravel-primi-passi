@@ -12,8 +12,9 @@
 
     <h1>Primo Laravel</h1>
 
-    <a href="/numbers">Lista numeri</a>
-    <a href="/user">Utente</a>
+    <h2>Utente:</h2>
+    <p>Nome: {{ $name }}</p>
+    <p>Cognome: {{ $lastname }}</p>
 
 </body>
 

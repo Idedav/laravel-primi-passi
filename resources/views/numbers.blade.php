@@ -11,10 +11,11 @@
 <body>
 
     <h1>Primo Laravel</h1>
-
-    <a href="/numbers">Lista numeri</a>
-    <a href="/user">Utente</a>
-
+    <ul>
+        @for ($i = 1; $i <= $limit; $i++)
+            <li>{{ $i }}</li>
+        @endfor
+    </ul>
 </body>
 
 </html>

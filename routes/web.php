@@ -14,7 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $name = 'Davide';
-    $lastname = 'Correa';
-    return view('home', compact('name', 'lastname'));
+    return view('home');
+});
+
+Route::get('/numbers', function () {
+    $limit = 50;
+    return view('numbers',compact('limit'));
+});
+
+Route::get('/user', function () {
+    $name = 'Levi';
+    $lastname = 'Ackerman';
+    return view('user', compact('name', 'lastname'));
 });
